@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import { createGlobalStyle,ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from "./Module/Home/Home";
 import Neumorphism from "./Module/Neumorphism/Neumorphism";
 import { theme } from './theme';
 import { Navbar } from "./Components";
@@ -22,7 +21,6 @@ function App() {
 			<GlobalStyle />
 			<ThemeProvider theme ={theme}>
 			  <Router>
-      <Navbar/>
         <Switch>
           <Route path='/' exact component={Neumorphism} />
           <Route path='/Neumorphism' component={Neumorphism} />

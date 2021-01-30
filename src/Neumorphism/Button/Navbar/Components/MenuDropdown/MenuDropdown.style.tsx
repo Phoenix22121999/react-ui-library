@@ -18,13 +18,13 @@ export const Menu = styled.div<MenuProps>`
 	transform: ${({ state }) => (state === "entered" ? "translateX(0%)" : "translateX(110%)")};
     position: ${({ state }) => (state === "entering"||state === "exiting" ? "absolute" : "relative")};
 	width: 100%;
-    padding:  0.2rem;
 
 `
 
 export const DropdownWarper = styled.div<Wraper>`
     top:160%;
-    min-width: 100%;
+    min-width: 120%;
+    padding: 0  0.5rem;
     position: absolute;
 	overflow: hidden;
     /* padding: 0.5rem 0.2rem; */

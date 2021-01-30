@@ -23,8 +23,7 @@ export const MenuDropdown: React.FunctionComponent<IMenuItemProps> = ({
 	const [height, setHeight] = useState<number|undefined>(undefined);
 	const dropdownRef = useRef<HTMLDivElement>(null)
 	const calcHeight = (element:HTMLElement) =>{
-		setHeight(element.offsetHeight)
-		console.debug(element.offsetHeight)
+		setHeight(element.offsetHeight+24)
 	}
 	return (
 		<DropdownWarper state={state} ref={dropdownRef} height={height}>

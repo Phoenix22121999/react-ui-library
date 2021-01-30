@@ -7,15 +7,11 @@ import { Transition } from "react-transition-group";
 import SlidebarMenu from "./Components/SlideBarMenu/SlideBarMenu";
 interface Props {}
 
-export const Navbar = ({}: Props) => {
+export const Navbar = (Props:Props) => {
 	const [toggleNavbar, settoggleNavbar] = useState(false);
 
 	const handleToggle = (): void => {
 		settoggleNavbar(!toggleNavbar);
-	};
-
-	const closeNavbar = (): void => {
-		settoggleNavbar(false);
 	};
 
 	return (

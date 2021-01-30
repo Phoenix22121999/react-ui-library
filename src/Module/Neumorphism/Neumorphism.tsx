@@ -8,7 +8,7 @@ interface INeumorphismProps {
 const Neumorphism: React.FunctionComponent<INeumorphismProps> = (props) => {
   return (
     <Router>
-      {/* <Navbar/> */}
+      <Navbar/>
     <Switch>
      
     </Switch>
